@@ -65,11 +65,12 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <> {/* Every JSX code block requires open and closing div tags.*/}
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}> {/* onClick missing draw card function listed in line 38.*/}
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}> {/* Correct property call is onClick using camel case.*/}
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,6 +82,7 @@
               )
             })}
           </div>
+          </>
         )
       }
 
